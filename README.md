@@ -25,6 +25,18 @@ Usage
 Put `recipe[vc2015]` in a run list, or `include_recipe 'vc2015'` to ensure that the libraries are installed on your systems
 
 
+Known Issues
+============
+
+!! If you are having issues with installation of the runtime, ensure all Windows updates on the node !!
+
+The Microsoft Visual Studio 2015 C++ Runtime can fail with very ambiguous error messages (Error 23) without at least the following
+updates (and their prerequisites) already applied:
+
+Service Pack 1 for Windows 7/2008 R2
+Update Rollup (2919355) for Windows 8.1/2012 R2
+
+
 License and Author
 ==================
 
